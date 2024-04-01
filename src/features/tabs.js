@@ -10,8 +10,8 @@ const initialState = [
         buttonContent: "HTML",
         code: `<div>
         <h1>Èditeur de code avec React</h1>
-        <p>Codez directement sur votre navigateur.</p>
-        </div>`
+        <p>Codez directement sur votre navigateur.</p>        
+</div>`,
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ const initialState = [
             padding: 25px;
             color: #111;
             background-color: #f1f1f1;
-        }`
+        }`,
     },
     {
         id: 3,
@@ -45,5 +45,5 @@ export const codeUpdater = createSlice({
     }
 })
 
-export const {updateCode}=codeUpdater.actions
+export const { updateCode } = codeUpdater.actions
 export default codeUpdater.reducer
