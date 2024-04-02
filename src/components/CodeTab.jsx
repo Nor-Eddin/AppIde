@@ -8,7 +8,7 @@ const dispath = useDispatch();
 
   return (
     <div>
-      <textarea onChange={e=>dispath(updateCode({id,value:e.target}))} value={code} spellCheck="false" 
+      <textarea onChange={e=>dispath(updateCode({id,value: e.target.value}))} value={code} spellCheck="false" 
       className='bg-zinc-900 text-slate-200 text-xl 
       p-8 block h-full w-full focus:outline-none resize-none'>
 
